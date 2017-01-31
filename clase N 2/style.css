@@ -1,0 +1,15 @@
+body{
+  background-color:#333;
+  color:#000;
+}
+li{
+  padding: 5px;
+  margin: 5px;
+  border: 1px dashed white;
+  color:white;
+}
+.seen{
+  font-weight: 800;
+  background-color: #ccc;
+  opacity: 0.5;
+}

@@ -1,0 +1,23 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vue</title>
+
+  <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+  <script src="vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <input type="text" v-model="phrase">
+    <input type="submit" value="enviar" v-on:click="guardarFilms(phrase)">
+    <ul>
+      <li v-for="film in films" v-bind:class="{'seen':film.seen}">{{film.nombre}} <a href="#" v-on:click="eliminarFilms(film.name)">X</a> <input type="checkbox" v-model="film.seen"></li>
+    </ul>
+    <pre>{{$data}}</pre>
+  </div>
+  <script src="apps/primer.js"></script>
+</body>
+</html>
